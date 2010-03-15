@@ -1,9 +1,3 @@
-/* TEMP */
-
-div {
-outline: 1px solid black; -moz-outline: 0 solid black;
-}
-
 /* NON STRUCTURAL CLEARING */
 
 div.intro div:after, #main:after, body.bladdra div.vara:after, body.visa div.vara:after, body.sok div.pages:after {
