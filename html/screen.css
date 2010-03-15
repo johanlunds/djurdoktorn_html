@@ -1,0 +1,999 @@
+/* TEMP */
+
+div {
+outline: 1px solid black; -moz-outline: 0 solid black;
+}
+
+/* NON STRUCTURAL CLEARING */
+
+div.intro div:after, #main:after, body.bladdra div.vara:after, body.visa div.vara:after, body.sok div.pages:after {
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+}
+
+div.intro div, #main, body.bladdra div.vara, body.visa div.vara, body.sok div.pages {
+display: inline-table;
+}
+
+/* Hides from IE-mac \*/
+
+* html div.intro div, * html #main, * html body.bladdra div.vara, * html body.visa div.vara, body.sok div.pages {
+height: 1%;
+}
+
+div.intro div, #main, body.bladdra div.vara, body.visa div.vara, body.sok div.pages {
+display: block;
+}
+
+/* End hide from IE-mac */
+
+/* GLOBAL SPACE RESET */
+
+* {
+margin: 0;
+padding: 0;
+}
+
+p, pre, blockquote, form, label, ul, ol, dl, fieldset, address {
+margin: 10px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+margin: 10px 0 5px;
+}
+
+li, dd, blockquote {
+margin-left: 20px;
+}
+
+fieldset {
+padding: 5px;
+}
+
+/* LAYOUT */
+
+body {
+font: 62.5% "trebuchet ms", helvetica, arial, sans-serif;
+color: #2D261E;
+text-align: center;
+background: #DED5B3 url(bilder/bgbody.gif) repeat-x left top;
+}
+
+.hideme {
+display: none;
+}
+
+div.clear {
+clear: both;
+height: 0;
+}
+
+#wrap {
+width: 790px;
+margin: 0 auto;
+text-align: left;
+}
+
+#header {
+height: 143px;
+background: url(bilder/bgheader.gif) no-repeat left top;
+}
+
+#header img {
+border: 0;
+position: relative;
+top: 30px;
+left: 130px;
+}
+
+#main {
+background: url(bilder/bgmain.gif) repeat-y left top;
+}
+
+#logo, #content {
+width: 515px;
+float: left;
+display: inline;
+}
+
+#content {
+margin: 0 25px 20px 30px;
+}
+
+#meny-main, #sidebar {
+width: 200px;
+float: right;
+margin-left: 20px;
+display: inline;
+}
+
+#meny-tree {
+padding: 20px 30px 0;
+}
+
+#sidebar {
+margin-top: 20px;
+}
+
+#footer {
+background: url(bilder/bgfooter.gif) no-repeat left top;
+height: 100px;
+height/**/:/**/ 35px;
+padding: 65px 30px 0;
+}
+
+#meny-main ul {
+list-style: none;
+text-indent: -9999px;
+margin: 32px 0 0;
+}
+
+#meny-main li {
+margin: 0 0 1px;
+}
+
+#meny-main li a {
+display: block;
+height: 24px;
+text-decoration: none;
+}
+
+#meny-main .vet a {
+background: url(bilder/list-vet.gif) no-repeat left top;
+}
+
+#meny-main .shop a {
+background: url(bilder/list-shop.gif) no-repeat left top;
+}
+
+#meny-main .webbvet a {
+background: url(bilder/list-webbvet.gif) no-repeat left top;
+cursor: default; /* TEMP */
+}
+
+#meny-main li a:hover {
+background-position: 0 -24px;
+}
+
+#meny-main li.webbvet a:hover {
+background-position: 0 0; /* TEMP */
+}
+
+#vet-page li.vet a, #shop-page li.shop a, #webbvet-page li.webbvet a {
+background-position: 0 -24px;
+}
+
+/* SIDEBAR */
+
+#sidebar div.box {
+background: #E7E0C7 url(bilder/bgbox.gif) repeat-y left top;
+margin-bottom: 20px;
+}
+
+#sidebar div.box div {
+background: url(bilder/bgbox-top.gif) no-repeat right top;
+}
+
+#sidebar div.box div div {
+background: url(bilder/bgbox-bottom.gif) no-repeat bottom left;
+padding: 20px 3px 5px 20px;
+}
+
+#sidebar div.important {
+background-image: url(bilder/bgbox-important.gif);
+background-position: left top;
+background-repeat: repeat-y;
+}
+
+#sidebar div.important div div {
+background: url(bilder/bgbox-important-bottom.gif) no-repeat bottom left;
+}
+
+#sidebar div.meny-sub ul {
+margin-left: -20px; /* INVERSEN TILL MARGIN FOR BOX */
+margin-right: -3px; /* INVERSEN TILL MARGIN FOR BOX */
+list-style: none;
+font-size: 1.6em;
+padding-bottom: 75px;
+background: url(bilder/snake.gif) no-repeat 60px bottom;
+}
+
+#sidebar div.meny-sub li {
+margin: 0 0 1px 0;
+}
+
+#sidebar div.meny-sub li.active a  {
+background-image: url(bilder/list-red.gif);
+color: #BA2722;
+}
+
+#sidebar div.meny-sub li a  {
+display: block;
+background: url(bilder/list-white.gif) no-repeat 7px center;
+text-decoration: none;
+color: #2D261E;
+text-indent: 25px;
+width: 200px;
+}
+
+#sidebar div.meny-sub li a:hover  {
+background-image: url(bilder/list-white.gif);
+background-color: #BA2722;
+color: #E7E0C7;
+}
+
+#sidebar div.varukorg ul {
+list-style: none;
+font-size: 1.3em;
+font-weight: bold;
+letter-spacing: 1px;
+width: 160px;
+width/**/:/**/ 140px;
+margin: 10px 10px 10px auto;
+}
+
+#sidebar div.varukorg li {
+margin: 0;
+}
+
+#sidebar div.varukorg li a {
+text-align: right;
+text-decoration: none;
+display: block;
+padding-right: 20px;
+color: #2D261E;
+}
+
+#sidebar div.varukorg li a:hover {
+color: #BA2722;
+}
+
+#sidebar div.varukorg li.edit a {
+background: url(bilder/list-varukorg.gif) no-repeat right center;
+}
+
+#sidebar div.varukorg li.buy a {
+background: url(bilder/list-kassa.gif) no-repeat right center;
+}
+
+#sidebar div.varukorg table {
+margin-bottom: 0;
+border-collapse: collapse;
+}
+
+#sidebar div.varukorg tfoot th, #sidebar div.varukorg tfoot td {
+border-top: 1px #AECF66 solid;
+}
+
+#sidebar div.varukorg tfoot td {
+text-align: right;
+}
+
+#sidebar div.varukorg tfoot th {
+font-variant: small-caps;
+}
+
+#sidebar form input {
+border: 1px #7F6D54 solid;
+padding: 0.3em;
+}
+
+#sidebar form input:focus {
+border-color: #BA2722;
+}
+
+#sidebar form input.submit {
+padding: 0.3em;
+color: #EFEBDB;
+background-color: #BA2722;
+border: 0;
+}
+
+/* TEXT */
+
+#meny-tree p, #footer p {
+margin: 0;
+font: 1.1em georgia, serif;
+color: #7F6D54;
+}
+
+#meny-tree strong {
+font-weight: normal;
+}
+
+#meny-tree a {
+color: #2D261E;
+}
+
+#meny-tree a:hover {
+color: #7F6D54;
+}
+
+#meny-tree a:active {
+position: relative;
+top: 1px;
+}
+
+#footer a {
+color: #7F6D54;
+}
+
+#footer a:hover {
+color: #2D261E;
+}
+
+h1 {
+font-size: 2.2em;
+color: #BA2722;
+}
+
+h2 {
+font-size: 1.8em;
+}
+
+h3 {
+font-size: 1.6em;
+}
+
+#sidebar div.box h3 {
+margin: 0;
+font-size: 1.8em;
+}
+
+h4 {
+font-weight: normal;
+font: 1.1em georgia, serif;
+margin: 0 0 13px;
+}
+
+h4 strong {
+color: #BA2722;
+}
+
+h5 {
+font-size: 1.2em;
+}
+
+h6 {
+font-size: 1em;
+}
+
+#content p, #content ul, #content table, #content ol, #content form, #content dl {
+font-size: 1.3em;
+}
+
+#sidebar p, #sidebar table, #sidebar form {
+font-size: 1.2em;
+}
+
+ul ul, ol ol, input, textarea, select, #content form p {
+font: 1em "trebuchet ms", helvetica, arial, sans-serif;
+}
+
+#content a:link, #sidebar div.link a:link {
+color: #2D261E;
+}
+
+#content p strong, #content strong a:link, #content p.read-art a:link {
+color: #BA2722;
+}
+
+#content a:visited, #sidebar div.link a:visited {
+color: #7F6D54;
+}
+
+#content a:hover, #content strong a:hover, #content p.read-art a:hover, #sidebar div.link a:hover {
+color: #EFEBDB;
+background: #BA2722;
+text-decoration: none;
+}
+
+#content a:focus, #content strong a:focus, #content p.read-art a:focus, #sidebar div.link a:focus {
+color: #EFEBDB;
+background: #BA2722;
+text-decoration: none;
+}
+
+#content a:active, #sidebar div.link a:active {
+color: #2D261E;
+background-color: transparent;
+}
+
+/* ALLMAN CONTENT LAYOUT */
+
+/* ------------ TABLE */
+
+table {
+margin: 10px 0;
+}
+
+table th, table td {
+vertical-align: top;
+}
+
+/* ------------ LIST */
+
+#content ul.special {
+margin-left: 15px;
+}
+
+#content ul.special li {
+list-style: none;
+margin: 0 0 1px;
+text-indent: 18px;
+background: url(bilder/list.gif) no-repeat left 0.3em;
+}
+
+#content ul.special li li {
+margin: 0 0 0 40px;
+list-style: circle;
+background-image: none;
+text-indent: 0;
+}
+
+/* ------------ IMG */
+
+#content img {
+border: 4px #E7E0C7 solid;
+margin: 5px;
+}
+
+#content a img {
+border-color: #C6DD93;
+}
+
+#content a:hover img {
+border-color: #AECF66;
+}
+
+#content a.img {
+background-color: transparent;
+}
+
+/* ------------ INTRO */
+
+#content div.intro {
+background: #C6DD93 url(bilder/intro-tr.gif) no-repeat right top;
+margin: 20px 0 20px -30px;
+}
+
+#content div.intro div {
+background: url(bilder/intro-br.gif) no-repeat right bottom;
+padding: 12px 12px 12px 30px;
+}
+
+#content div.intro img {
+float: right;
+display: inline;
+margin: 0 0 5px 5px;
+}
+
+#content div.intro p {
+margin: 0 0 10px;
+}
+
+#content div.intro h1 {
+margin: 10px 0;
+}
+
+/* UNDERSIDOR */
+
+/* ------------ FORM KONTAKT */
+
+
+body.kontakt #content fieldset {
+border: 0;
+}
+
+body.kontakt #content fieldset fieldset {
+border: 1px #7F6D54 solid;
+padding: 10px 15px;
+}
+
+body.kontakt #content fieldset legend {
+background: #EFEBDB;
+padding: 10px;
+color: #BA2722;
+}
+
+body.kontakt #content fieldset label {
+line-height: 1.9em;
+}
+
+body.kontakt #content form div.textfield {
+position: relative;
+margin-bottom: 15px;
+}
+
+body.kontakt #content form div.textfield input {
+position: absolute;
+right: 0;
+width: 50%;
+border: 1px #7F6D54 solid;
+padding: 0.3em;
+}
+
+body.kontakt #content form div.textfield input:focus, body.kontakt #content form textarea:focus {
+border-color: #BA2722;
+}
+
+body.kontakt #content fieldset.radio input {
+background: #EFEBDB;
+}
+
+body.kontakt #content form label.texta {
+display: block;
+margin: 5px 0 0;
+}
+
+body.kontakt #content form textarea {
+border: 1px #7F6D54 solid;
+display: block;
+width: 503px;
+width/**/:/**/ 497px;
+padding: 3px;
+}
+
+body.kontakt #content form input.submit {
+margin-top: 10px;
+width: 100%;
+padding: 3px;
+color: #EFEBDB;
+background-color: #BA2722;
+border: 0;
+}
+
+/* ------------ INFO FORSALJARE, VET. FOOTER */
+
+body.info-brev #content p.contact-footer {
+margin-top: 40px;
+background: url(bilder/contact.gif) no-repeat left top;
+width: 515px;
+height: 100px;
+}
+
+body.info-brev #content p.contact-footer a {
+text-decoration: none;
+background-color: transparent;
+text-indent: -10000px;
+position: relative;
+top: 41px;
+height: 24px;
+display: block;
+}
+
+/* ------------ KONTAKT, KLINIKER TABELL */
+
+body.kontakt #content table {
+margin-left: 11px;
+}
+
+body.kliniker #content table {
+margin: 0 0 20px;
+}
+
+body.kontakt #content th, body.kliniker #content th {
+color: #BA2722;
+}
+
+body.kontakt #content table.epost th {
+padding-right: 20px;
+border-right: 1px #C6DD93 solid;
+}
+
+body.kontakt #content table.epost td {
+padding-left: 20px;
+}
+
+/* ------------ ANSTALLDA */
+
+body.anstallda #content div.anstalld {
+margin: 40px 0 60px;
+}
+
+body.anstallda #content div.anstalld img {
+float: left;
+margin: 0 15px 0 0;
+}
+
+body.anstallda #content div.anstalld h2 {
+color: #BA2722;
+margin: 0;
+}
+
+body.anstallda #content div.anstalld h4 {
+margin: 0;
+}
+
+body.anstallda #content div.anstalld p {
+margin: 8px 0 5px;
+}
+
+/* ------------ KLINIKER */
+
+body.kliniker #content img {
+margin: 10px 0;
+}
+
+body.kliniker #content h2 {
+margin: 0;
+text-indent: -10000px;
+position: relative;
+}
+
+body.kliniker #content #norby a, body.kliniker #content #geijer a {
+text-decoration: none;
+background-color: transparent;
+display: block;
+position: absolute;
+top: 0;
+right: 0;
+width: 93px;
+height: 22px;
+}
+
+body.kliniker #norby {
+background: url(bilder/norby.gif) no-repeat center center;
+}
+
+body.kliniker #geijer {
+background: url(bilder/geijer.gif) no-repeat center center;
+}
+
+/* ------------ INFO */
+
+body.info #content div.art {
+padding-left: 25px;
+margin: 30px 0;
+background: url(bilder/list-big.gif) no-repeat left 5px;
+}
+
+body.info #content div.art h1 {
+margin: 0;
+}
+
+body.info #content div.art p {
+margin: 0;
+}
+
+body.info #content div.art p.read-art {
+margin-top: 3px;
+font-weight: bold;
+}
+
+body.info #content img {
+float: right;
+margin: 0 0 5px 5px;
+}
+
+body.info #content h2 {
+margin: 0 0 3px 0;
+}
+
+body.info #content p {
+margin: 0 0 15px 0;
+}
+
+body.info #content p.art-footer {
+text-align: right;
+margin: 25px 0;
+}
+
+body.info #content p.art-footer span {
+background: #DED5B3;
+padding: 5px 15px;
+color: #2D261E;
+}
+
+body.info #content p.art-footer a {
+color: #2D261E;
+background-color: transparent;
+}
+
+/*  ------------ INDEX */
+
+body.index #content div.intro-special {
+margin: 20px 0 40px;
+}
+
+body.index #content div.intro-special h1, body.index #content div.intro-special h2, body.index #content div.intro-special p {
+display: none;
+}
+
+#vet-page #content div.intro-special {
+background: url(bilder/header-vet.jpg) no-repeat top left;
+padding-top: 264px;
+}
+
+#shop-page #content div.intro-special {
+background: url(bilder/header-shop.jpg) no-repeat top left;
+padding-top: 239px;
+}
+
+body.index #content div.intro-special ul {
+list-style: none;
+margin: 0;
+}
+
+#shop-page #content div.intro-special ul {
+font-size: 2.4em;
+background: #AECF66 url(bilder/bglist-shop.gif) no-repeat center bottom;
+padding: 15px 0 12px;
+}
+
+body.index #content div.intro-special li a {
+text-decoration: none;
+background-color: transparent;
+}
+
+#vet-page #content div.intro-special ul {
+height: 78px;
+background: url(bilder/list-vet-index.gif) no-repeat left top;
+text-indent: -9999px;
+}
+
+#vet-page #content div.intro-special li {
+margin: 0;
+}
+
+#vet-page #content div.intro-special li a {
+display: block;
+height: 78px;
+width: 172px;
+position: relative;
+}
+
+#shop-page #content div.intro-special li {
+margin: 0 0 3px 15px;
+}
+
+#shop-page #content div.intro-special li a {
+color: #2D261E;
+}
+
+#shop-page #content div.intro-special li a:hover {
+color: #BA2722;
+}
+
+#vet-page #content div.intro-special li.intro-kliniker a {
+top: -78px;
+left: 172px;
+}
+
+#vet-page #content div.intro-special li.intro-info a {
+top: -156px;
+left: 343px;
+}
+
+/*  ------------ BLADDRA, SOKRESULTAT */
+
+body.bladdra #content div.vara {
+margin-bottom: 40px;
+}
+
+body.bladdra #content div.vara h4 {
+margin: 0 0 5px;
+}
+
+body.bladdra #content div.vara h4 strong {
+color: #2D261E;
+}
+
+body.bladdra #content div.vara h3, body.bladdra #content div.vara p, body.bladdra #content div.vara h2, body.bladdra #content div.vara table {
+margin: 0;
+}
+
+body.bladdra #content div.vara img {
+float: left;
+margin: 0;
+}
+
+body.bladdra #content div.text {
+float: right;
+width: 357px;
+margin-left: 10px;
+}
+
+body.bladdra #content div.footer {
+clear: both;
+}
+
+body.bladdra #content div.vara form, body.bladdra #content div.vara form p {
+display: inline;
+}
+
+body.bladdra #content div.vara form div {
+float: right;
+margin-top: 0.3em;
+}
+
+body.bladdra #content div.vara form label {
+margin-right: 5px;
+}
+
+body.bladdra #content div.vara form input {
+border: 1px #7F6D54 solid;
+padding: 0.3em;
+}
+
+body.bladdra #content div.vara form input:focus {
+border-color: #BA2722;
+}
+
+body.bladdra #content div.vara form input.submit {
+padding: 4px;
+color: #EFEBDB;
+background: #BA2722 url(bilder/form-buy.gif) no-repeat 7px 0.4em;
+border: 0;
+text-indent: 18px;
+}
+
+body.bladdra #content div.vara form p a {
+background: #DED5B3;
+padding: 5px 15px;
+color: #2D261E;
+}
+
+body.bladdra #content div.vara h3 {
+float: left;
+margin: 0 4px;
+width: 140px;
+text-align: center;
+font: 2.1em georgia, serif;
+color: #BA2722;
+}
+
+body.bladdra #content div.vara table th {
+padding-right: 5px;
+}
+
+body.bladdra #content div.vara table th, body.bladdra #content div.vara table td {
+padding-bottom: 3px;
+}
+
+body.sok #content div.intro div {
+padding: 10px 10px 10px 30px;
+}
+
+body.sok #content div.intro h1 {
+margin: 0;
+}
+
+body.sok #content div.intro p {
+margin: 3px 0;
+}
+
+body.sok #content div.pages p.count {
+float: left;
+}
+
+body.sok #content div.pages p.select {
+float: right;
+}
+
+body.sok div.intro form {
+margin: 5px 0 0;
+}
+
+body.sok div.intro form label {
+margin-right: 5px;
+}
+
+body.sok div.intro form input {
+border: 1px #7F6D54 solid;
+padding: 0.3em;
+}
+
+body.sok div.intro form input:focus {
+border-color: #BA2722;
+}
+
+body.sok div.intro form input.submit {
+padding: 0.3em;
+color: #EFEBDB;
+background-color: #BA2722;
+border: 0;
+}
+
+/*  ------------ VISA VARA */
+
+body.visa #content div.vara img {
+float: left;
+margin: 0;
+}
+
+body.visa #content div.text {
+float: right;
+width: 357px;
+margin-left: 10px;
+}
+
+body.visa #content div.vara h3 {
+font: 3em georgia, serif;
+color: #BA2722;
+line-height: 0.6em;
+margin: 0;
+}
+
+body.visa #content div.vara p {
+font-size: 1.2em;
+margin: 2px 0 0;
+}
+
+body.visa #content div.vara form {
+margin: 5px 0;
+}
+
+body.visa #content div.vara form label {
+margin-right: 5px;
+}
+
+body.visa #content div.vara form input {
+border: 1px #7F6D54 solid;
+padding: 0.3em;
+}
+
+body.visa #content div.vara form input:focus {
+border-color: #BA2722;
+}
+
+body.visa #content div.vara form input.submit {
+padding: 4px;
+color: #EFEBDB;
+background: #BA2722 url(bilder/form-buy.gif) no-repeat 7px 0.4em;
+border: 0;
+text-indent: 18px;
+}
+
+body.visa #content div.vara ul {
+list-style: none;
+font-size: 1.3em;
+font-weight: bold;
+letter-spacing: 1px;
+margin: 0;
+width: 150px;
+}
+
+body.visa #content li {
+margin: 0;
+}
+
+body.visa #content li a {
+text-decoration: none;
+display: block;
+padding-left: 20px;
+color: #2D261E;
+}
+
+body.visa #content li a:hover {
+color: #BA2722;
+}
+
+body.visa #content li.edit a {
+background: url(bilder/list-varukorg-visa.gif) no-repeat left center;
+}
+
+body.visa #content li.buy a {
+background: url(bilder/list-kassa-visa.gif) no-repeat left center;
+}
+
+body.visa #content table {
+margin: 25px 0 10px;
+}
+
+body.visa #content th {
+padding-right: 5px;
+}
+
+body.visa #content div.info h4 {
+font: 1.3em "trebuchet ms", helvetica, arial, sans-serif;
+font-weight: bold;
+margin: 0 0 1px;
+}
+
+body.visa #content div.info p {
+margin: 0 0 1em;
+}

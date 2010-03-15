@@ -1,0 +1,43 @@
+/*  ------------ INDEX */
+
+* {
+margin: 0;
+padding: 0;
+}
+
+#index {
+background: #DED5B3;
+margin: 20px 0 0;
+padding: 0;
+}
+
+#index div h1, #index div p {
+display: none;
+}
+
+#index div * {
+border: 0;
+text-decoration: none;
+}
+
+#index div dl {
+text-indent: -10000px;
+padding-top: 490px;
+}
+
+#index div {
+background: url(bilder/index.gif) no-repeat left top;
+width: 570px;
+height: 690px;
+margin: 0 auto;
+}
+
+#index div a {
+display: block;
+height: 45px;
+margin-bottom: 16px;
+}
+
+#index div a.inactive {
+cursor: default; /* TEMP */
+}

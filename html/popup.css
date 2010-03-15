@@ -1,0 +1,49 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+a img {
+border: 0;
+}
+
+body.kliniker {
+background: #EFEBDB;
+font: 62.5% "trebuchet ms", helvetica, arial, sans-serif;
+color: #2D261E;
+}
+
+body.kliniker img {
+margin: 4px;
+}
+
+body.kliniker p {
+font-size: 1.2em;
+text-align: center;
+margin: 3px;
+}
+
+body.kliniker a:link {
+color: #2D261E;
+}
+
+body.kliniker a:visited {
+color: #7F6D54;
+}
+
+body.kliniker a:hover {
+color: #EFEBDB;
+background: #BA2722;
+text-decoration: none;
+}
+
+body.kliniker a:focus {
+color: #EFEBDB;
+background: #BA2722;
+text-decoration: none;
+}
+
+body.kliniker a:active {
+color: #2D261E;
+background-color: transparent;
+}
