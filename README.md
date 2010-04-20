@@ -1,6 +1,6 @@
 # Beskrivning
 
-Detta är HTML-mallar för ett uppdrag Mediagear of Sweden HB hade 2006/2007. De är alltså bara statiska HTML-sidor. De är gjorda i/för Firefox 2.0 men ska se likadana ut i nyaste Safari, Chrome och Firefox (testat 2010-03-15).
+Detta är HTML-mallar för ett uppdrag Mediagear of Sweden HB hade 2005/2006. De är alltså bara statiska HTML-sidor. De är gjorda i/för Firefox 2.0 men ska se likadana ut i nyaste Safari, Chrome och Firefox (testat 2010-03-15).
 
 Koden försöker följa webbstandarder (ska funka/se likadant ut i alla webbläsare). Layouten är CSS-baserad och hemsidan funkar fint med CSS avslaget. Designen är skapad utifrån mockups gjorda i Photoshop.
 
@@ -10,7 +10,7 @@ Skisser, designförslag/mockups, HTML-mallar och slutlig implementation i PHP ä
 
 - browsa koden på Github
 - checka ut lokalt och öppna `/index.htm` i din webbläsare
-- [kolla screenshots av Wordpress- och CodeIgniter-versionerna](http://www.flickr.com/photos/johan_lunds/sets/72157623624582096/) (design skiljer lite och all funktionalitet inte slutförd)
+- [kolla screenshots av Wordpress- och CodeIgniter-versionerna](http://www.flickr.com/photos/johan_lunds/sets/72157623771350635/) (design skiljer lite och all funktionalitet inte slutförd)
 
 ## Noteringar
 
